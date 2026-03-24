@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta name="description" content="Professional business website">
+<meta name="keywords" content="business, web development, services">
+<meta name="author" content="Your Name">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Business Website</title>
+
+  <!-- Tailwind CSS -->
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+
+<body class="font-sans">
+
+<!-- Navbar -->
+<nav class="bg-gray-900 text-white">
+  <div class="max-w-7xl mx-auto px-4 py-4 flex justify-between">
+    <h1 class="text-xl font-bold">MyBusiness</h1>
+    <ul class="flex space-x-6">
+      <li><a href="#" class="hover:text-blue-400">Home</a></li>
+      <li><a href="#" class="hover:text-blue-400">About</a></li>
+      <li><a href="#" class="hover:text-blue-400">Services</a></li>
+      <li><a href="#" class="hover:text-blue-400">Contact</a></li>
+    </ul>
+  </div>
+</nav>
+
+<!-- Hero Section -->
+<section class="bg-blue-600 text-white text-center py-20">
+  <h2 class="text-4xl font-bold mb-4">Welcome to Our Business</h2>
+  <p class="text-lg">We build modern and responsive websites</p>
+  <button class="mt-6 bg-white text-blue-600 px-6 py-2 rounded hover:bg-gray-200">
+    Get Started
+  </button>
+</section>
+
+<!-- About Section -->
+<section class="py-16 px-6 max-w-6xl mx-auto text-center">
+  <h2 class="text-3xl font-bold mb-6">About Us</h2>
+  <p class="text-gray-600">
+    We are a professional team delivering high-quality business solutions
+    with modern web technologies.
+  </p>
+</section>
+
+<!-- Services -->
+<section class="bg-gray-100 py-16">
+  <div class="max-w-6xl mx-auto px-6">
+    <h2 class="text-3xl font-bold text-center mb-10">Our Services</h2>
+
+    <div class="grid md:grid-cols-3 gap-6">
+      
+      <div class="bg-white p-6 rounded shadow">
+        <h3 class="text-xl font-semibold mb-2">Web Development</h3>
+        <p class="text-gray-600">Modern responsive websites.</p>
+      </div>
+
+      <div class="bg-white p-6 rounded shadow">
+        <h3 class="text-xl font-semibold mb-2">SEO Optimization</h3>
+        <p class="text-gray-600">Improve search rankings.</p>
+      </div>
+
+      <div class="bg-white p-6 rounded shadow">
+        <h3 class="text-xl font-semibold mb-2">Digital Marketing</h3>
+        <p class="text-gray-600">Grow your business online.</p>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- Contact -->
+<section class="py-16 px-6 max-w-4xl mx-auto">
+  <h2 class="text-3xl font-bold text-center mb-6">Contact Us</h2>
+
+  <form id="contactForm" class="space-y-4">
+    <input type="text" placeholder="Name"
+      class="w-full p-3 border rounded focus:outline-none focus:ring-2 focus:ring-blue-400" required>
+
+    <input type="email" placeholder="Email"
+      class="w-full p-3 border rounded focus:outline-none focus:ring-2 focus:ring-blue-400" required>
+
+    <textarea placeholder="Message"
+      class="w-full p-3 border rounded focus:outline-none focus:ring-2 focus:ring-blue-400"></textarea>
+
+    <button class="bg-blue-600 text-white px-6 py-2 rounded hover:bg-blue-700">
+      Submit
+    </button>
+  </form>
+</section>
+
+<!-- Footer -->
+<footer class="bg-gray-900 text-white text-center py-4">
+  <p>© 2026 MyBusiness. All rights reserved.</p>
+</footer>
+
+<!-- JavaScript -->
+<script>
+document.getElementById("contactForm").addEventListener("submit", function(e) {
+  e.preventDefault();
+  alert("Form submitted successfully!");
+});
+</script>
+
+</body>
+</html>
